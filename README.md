@@ -34,7 +34,7 @@ Please report issues to the [issues page](https://github.com/abhatia08/plan672-a
 
 ---
 ## Authors
-- [Mad Bankson](https://www.linkedin.com/in/bankson/) (![Github](http://i.imgur.com/9I6NRUm.png): Pending) 
+- [Mad Bankson](https://www.linkedin.com/in/bankson/) (![Github](http://i.imgur.com/9I6NRUm.png): [breadnroses](https://github.com/breadnroses))
 
 - [Abhishek Bhatia](https://abhatia.me/) (![Github](http://i.imgur.com/9I6NRUm.png): [abhatia08](https://github.com/abhatia08)) 
 
