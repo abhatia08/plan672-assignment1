@@ -19,6 +19,7 @@ Second, we will use the publicly available data mapped by the Marshall Project t
 
   - `./scripts/` contains all the scripts needed to reproduce the analysis. The scripts are intended to be run in order of their number.
   - `./source_data/` contains publicly-available data used in the analytic pipeline.
+  - `./figures/` contains all the original source visualizations, and processed visualizations that result from the `./scripts/` pipeline.
   - `./derived_data/` contains all processed data that results from our `./scripts/` pipeline.
 ---
 
