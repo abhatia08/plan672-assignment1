@@ -2,8 +2,6 @@
 
 This repository contains data and scripts used for the first assignment of [PLAN 672- Urban Data Analytics in R](https://nkaza.github.io/teaching/techniques-course/), at the University of North Carolina at Chapel Hill  
 
-![](figures/source_fig.png)
-
 ### About 
 
 In 2017 the [Marshall Project](https://www.themarshallproject.org/2017/10/20/prisons-and-the-deluge) mapped prison locations in Florida, southern Texas, and Puerto Rico and their vulnerability to flooding with reference to specific hurricanes that made landfall.  While officials had dismissed the anecdotal accounts from inmates that cells had experienced flooding, a comparative analysis of prison locations with data from the [Dartmouth Flood Observatory](https://floodobservatory.colorado.edu/Archives/index.html) showed that the areas surrounding several prison facilities did in fact flood. 
