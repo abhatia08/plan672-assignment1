@@ -45,7 +45,7 @@ docs/
 po/*~
 
 # data files
-source_data/climate_and_punishment.csv
+source_data/*
 derived_data/*
 
 # figures
