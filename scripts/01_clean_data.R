@@ -19,6 +19,11 @@ setwd(here())
 
 
 ## 1.3. Create necessary directories ----
+## Create directory to store source data
+if (!dir.exists("source_data")) {
+  dir.create("source_data")
+  
+}
 ## Create directory to store processed data
 if (!dir.exists("derived_data")) {
   dir.create("derived_data")
@@ -104,10 +109,44 @@ if (!file.exists(here::here("derived_data", "intercept_tidy.csv"))) {
             here::here("derived_data", "intercept_tidy.csv"))
 }
 
-# 3. OTHER DATA ----
+# 3. HURRICANE FLORENCE DATA ----
+## Hurricane Florence Flood Extent September 14 2018 
+## Note: Raster files found from NCOneMap:https://www.nconemap.gov/datasets/nconemap::hurricane-florence-flood-extent-across-the-piedmont-and-coastal-plain-of-north-carolina/about
 
+## 3.1 Download raw dataset ----
+if (!file.exists(here::here("derived_data", "FloodExtentFlorence.tif"))) {
+  options(timeout = 100)
+  download.file(
+    "https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A68ea0876-33ef-4223-80dd-f563c9c39efc",
+    here::here("source_data",
+               "Florence_flood_extent.zip"),
+    quiet = FALSE,
+    mode = "wb",
+    method = "libcurl"
+  )
+  utils::unzip(
+    "source_data/Florence_flood_extent.zip",
+    overwrite = TRUE,
+    exdir = here::here("derived_data")
+  )
+  
+}
 
-# TO PIERCE. JUST LIKE THE ABOVE CHUNK CLEANS INTERCEPT DATA, IF WE'RE GOING TO USE OTHER DATASETS, WE CAN ADD IN EACH OF THEIR CLEANING CODE HERE IN SECTIONS. 
-# THEN, RUNNING THE FILE WOULD CLEAN ALL DATASETS AND WRITE IT TO A DIRECTORY.
-
-
+# 4. HURRICANE MATTHEW DATA ----
+## Hurricane Matthew October 8th 2016
+## 4.1 Download raw dataset ----
+if (!file.exists(here::here("derived_data", "FloodExtentMatthew.tif"))) {
+  download.file(
+    "https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aa162710b-a0f9-4cfa-af77-32d37ea9d148",
+    here::here("source_data",
+               "Matthew_flood_extent.zip"),
+    quiet = FALSE,
+    mode = "wb",
+    method = "libcurl"
+  )
+  utils::unzip(
+    "source_data/Matthew_flood_extent.zip",
+    overwrite = TRUE,
+    exdir = here::here("derived_data")
+  )
+}
