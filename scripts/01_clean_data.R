@@ -150,3 +150,21 @@ if (!file.exists(here::here("derived_data", "FloodExtentMatthew.tif"))) {
     exdir = here::here("derived_data")
   )
 }
+
+# 5. SHAPEFILES AND BASE LAYERS ----
+if (!file.exists(here::here("derived_data", "BoundaryCountyPolygon.shp"))) {
+  download.file(
+    "https://xfer.services.ncdot.gov/gisdot/DistDOTData-Current/State/shpe/CountyBoundary.zip",
+    here::here("source_data",
+               "NC_shp.zip"),
+    quiet = FALSE,
+    mode = "wb",
+    method = "libcurl"
+  )
+  utils::unzip(
+    "source_data/NC_shp.zip",
+    overwrite = TRUE,
+    exdir = here::here("derived_data")
+  )
+}
+
