@@ -68,7 +68,7 @@ if (!file.exists(here::here("derived_data", "intercept_tidy.csv"))) {
   
   ## Replace -999 to NA
   intercept_tidy[intercept_tidy == -999] <- NA
-
+  
   ## 2.4. Geocode dataset ----
   intercept_tidy <-
     intercept_tidy %>% geocode(
