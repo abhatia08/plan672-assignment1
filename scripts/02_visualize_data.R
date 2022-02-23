@@ -98,6 +98,21 @@ m1
 
 ## 2.2 Fig 2. Top 10 Facilities table by flood risk, including capacity  ----
 ## Create a gt table
+
+# Clean Facility Names from all uppercase to only first letter capitalized
+intercept_tidy$name <-intercept_tidy$name %>%
+  casefold(upper = FALSE) %>%
+  str_to_title() 
+# Repeat for City 
+intercept_tidy$city <-intercept_tidy$city %>%
+  casefold(upper = FALSE) %>%
+  str_to_title() 
+# Repeat for County
+intercept_tidy$county <-intercept_tidy$county %>%
+  casefold(upper = FALSE) %>%
+  str_to_title() 
+  
+
 top_10_risk <- intercept_tidy %>%
   arrange(desc(flood_risk_rating)) %>%
   dplyr::select(name, city, county, capacity, flood_risk) %>%
@@ -118,9 +133,13 @@ top_10_risk <- intercept_tidy %>%
 ## View Table
 top_10_risk 
 
+## NOTE: Change for aesthetics, background color, maybe more?
+
 ## Export table to figures directory
 gt::gtsave(top_10_risk, path =
              "figures", "tab_1.png")
+
+## NOTE: Maybe include a map of these top_10 locations?
 
 
 ## 2.3 Fig 3. Static Plot of all locations with different basemaps for context ----
@@ -150,20 +169,22 @@ nc_basemap <- tm_shape(nc_shape_df) +
 nc_basemap
 
 ## Add locations of prisons
-
 nc_basemap +
- tm_shape(intercept_sf) +
-
-dev.copy(
-  jpeg,
-  width = 800,
-  height = 500,
-  unit = "px",
-  quality = 100,
-  here("figures", "fig3.jpg")
-)
+  tm_shape(intercept_sf) +
+  tm_dots() +  # it seems like I needed to add this line to plot correctly 
+  dev.copy(
+    jpeg,
+    width = 800,
+    height = 500,
+    unit = "px",
+    quality = 100,
+    here("figures", "fig3.jpg")
+  )
 dev.off()
 graphics.off()
+
+
+
 
 ## 2.4 Fig 4. Prison locations overlaid with Hurricane Florence extent ----
 # tm_shape(florence_raster) +
@@ -196,9 +217,9 @@ graphics.off()
 
 ## EXTRA ----
 ## Set tmap mode
-tmap_mode('view')
-
-tm_shape(nc_shape) +
-  tm_polygons(col = "grey100", border.col = "grey", alpha = 0.05, border.alpha = 0.6) +
-  tm_layout(title = "North Carolina", title.position = c("left", "TOP")) +
-  tm_basemap("OpenStreetMap", alpha = 0.5)
+# tmap_mode('view')
+# 
+# tm_shape(nc_shape) +
+#   tm_polygons(col = "grey100", border.col = "grey", alpha = 0.05, border.alpha = 0.6) +
+#   tm_layout(title = "North Carolina", title.position = c("left", "TOP")) +
+#   tm_basemap("OpenStreetMap", alpha = 0.5)
