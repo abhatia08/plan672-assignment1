@@ -223,3 +223,49 @@ graphics.off()
 #   tm_polygons(col = "grey100", border.col = "grey", alpha = 0.05, border.alpha = 0.6) +
 #   tm_layout(title = "North Carolina", title.position = c("left", "TOP")) +
 #   tm_basemap("OpenStreetMap", alpha = 0.5)
+
+
+## 2.5 Interactive osm plot  ----
+## Set tmap mode
+tmap_mode('view')
+
+nc_osm <- tm_shape(nc_shape) +
+  tm_polygons(
+    col = "grey100",
+    border.col = "black",
+    alpha = 0.05,
+    border.alpha = 0.2
+  ) +
+  tm_layout(
+    title = "North Carolina",
+    title.position = c("left", "TOP")
+  ) +
+  tm_basemap("OpenStreetMap", alpha = 0.5)
+
+## with flood risk data
+fig5 <- nc_osm + tm_shape(intercept_sf) +
+  tm_symbols(
+    col = "flood_risk_rating",
+    palette = c(
+      "#70b8ff",
+      "#429bfa",
+      "#147df5",
+      "#095dd7",
+      "#0000ff",
+      "#0000b8",
+      "#00008f",
+      "#000079",
+      "#000052",
+      "#00003d"
+    ),
+    scale = 1,
+    shape = 21,
+    border.col = "grey",
+    border.lwd = 1,
+    title.col = "Flood Risk Rating",
+    legend.col.is.portrait = "FALSE"
+  ) +
+  tm_view(view.legend.position = c("right", "bottom")) 
+
+## Save static figure
+tmap_save(fig5, filename = here("figures", "fig5.html"))
