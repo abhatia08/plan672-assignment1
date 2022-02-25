@@ -46,7 +46,9 @@ po/*~
 
 # data files
 source_data/*
-derived_data/*
 
-# figures
-figures/*
+derived_data/FloodExtentFlorence.*
+derived_data/FloodExtentMatthew.*
+derived_data/CountyBoundary_SHP
+derived_data/FloodExtentMatthew_esritrans.log
+derived_data/FloodExtentFlorence_xslttran1.xml
