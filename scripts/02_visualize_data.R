@@ -22,6 +22,7 @@ pacman::p_load(here,
 
 ## 1.2 Declare `here` ----
 here::i_am("scripts/02_visualize_data.R")
+
 setwd(here())
 
 
@@ -226,7 +227,7 @@ dev.copy(
   height = 500,
   unit = "px",
   quality = 100,
-  here("figures", "fig2.jpg")
+  here("figures", "fig1.jpg")
 )
 dev.off()
 graphics.off()
@@ -371,7 +372,7 @@ interactive %>% tmap_leaflet() %>% addLayersControl(
 
 
 ## Save  figure
-# tmap_save(interactive, filename = here("figures", "interactive.html"))
+tmap_save(interactive, filename = here("figures", "interactive.html"))
 
 
 
