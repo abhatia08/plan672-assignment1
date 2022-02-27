@@ -201,16 +201,16 @@ nc_basemap +
   tm_symbols(
     col = "flood_risk_rating",
     palette = c(
-      "#70b8ff",
-      "#429bfa",
-      "#147df5",
-      "#095dd7",
-      "#0000ff",
-      "#0000b8",
-      "#00008f",
-      "#000079",
-      "#000052",
-      "#00003d"
+      "#f2f8ff",
+      "#e1ebf7",
+      "#c7daf4",
+      "#a8c0f3",
+      "#79a6f6",
+      "#5492ff",
+      "#2d74da",
+      "#1e57a4",
+      "#234579",
+      "#1d3458"
     ),
     scale = 1,
     shape = 21,
@@ -275,7 +275,7 @@ tmap_mode('view')
 interactive <-
   tm_basemap(leaflet::providers$CartoDB.Positron, group = "Default") +
   tm_basemap(leaflet::providers$Esri.WorldTopoMap, group = "Topography") +
-  tm_basemap(leaflet::providers$Jawg.Streets, group = "Streets") +
+  tm_basemap(leaflet::providers$OpenStreetMap.Mapnik, group = "Streets") +
   tm_layout(title = "North Carolina",
             title.position = c("left", "TOP")) +
   tm_shape(nc_shape) +
@@ -297,16 +297,16 @@ interactive <- interactive + tm_shape(intercept_sf) +
   tm_symbols(
     col = "flood_risk_rating",
     palette = c(
-      "#70b8ff",
-      "#429bfa",
-      "#147df5",
-      "#095dd7",
-      "#0000ff",
-      "#0000b8",
-      "#00008f",
-      "#000079",
-      "#000052",
-      "#00003d"
+      "#f2f8ff",
+      "#e1ebf7",
+      "#c7daf4",
+      "#a8c0f3",
+      "#79a6f6",
+      "#5492ff",
+      "#2d74da",
+      "#1e57a4",
+      "#234579",
+      "#1d3458"
     ),
     scale = 1,
     shape = 21,
@@ -329,16 +329,16 @@ interactive <- interactive + tm_shape(top_10_risk_df) +
   tm_symbols(
     col = "Flood Risk",
     palette = c(
-      "#70b8ff",
-      "#429bfa",
-      "#147df5",
-      "#095dd7",
-      "#0000ff",
-      "#0000b8",
-      "#00008f",
-      "#000079",
-      "#000052",
-      "#00003d"
+      "#f2f8ff",
+      "#e1ebf7",
+      "#c7daf4",
+      "#a8c0f3",
+      "#79a6f6",
+      "#5492ff",
+      "#2d74da",
+      "#1e57a4",
+      "#234579",
+      "#1d3458"
     ),
     scale = 1,
     shape = 21,
@@ -361,16 +361,16 @@ interactive <- interactive + tm_shape(intercept_sf) +
   tm_symbols(
     col = "flood_risk_rating",
     palette = c(
-      "#70b8ff",
-      "#429bfa",
-      "#147df5",
-      "#095dd7",
-      "#0000ff",
-      "#0000b8",
-      "#00008f",
-      "#000079",
-      "#000052",
-      "#00003d"
+      "#f2f8ff",
+      "#e1ebf7",
+      "#c7daf4",
+      "#a8c0f3",
+      "#79a6f6",
+      "#5492ff",
+      "#2d74da",
+      "#1e57a4",
+      "#234579",
+      "#1d3458"
     ),
     scale = 1,
     size = "capacity",
@@ -407,7 +407,7 @@ interactive %>% tmap_leaflet() %>% addLayersControl(
 
 
 ## Save  figure
-tmap_save(interactive, filename = here("figures", "interactive.html"))
-
+## tmap_save(interactive, filename = here("figures", "interactive.html"))
+# NOTE: You should export this as an html from the panel.
 
 
