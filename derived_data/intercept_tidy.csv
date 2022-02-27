@@ -1,0 +1,224 @@
+facilityid,name,city,county,state,zip,capacity,type,securelvl,status,flood_risk_rating,flood_risk,confidence,latitude,longitude
+10001789,Carteret County Detention Facility,Beaufort,Carteret,NC,28516,117,County,Not Available,Open,6,Major,Medium-High,34.7194389927757,-76.6620179995252
+10005500,Caswell County Detention Center,Yanceyville,Caswell,NC,27379,108,County,Not Available,Open,1,Minimal,High,36.4067169820921,-79.3355799928939
+10004187,Catawba County Detention Facility / Justice Center,Newton,Catawba,NC,28658,268,County,Maximum,Open,1,Minimal,Medium-High,35.6624170139723,-81.2325630156475
+10005513,Chatham County Detention Center,Pittsboro,Chatham,NC,27312,NA,County,Not Available,Open,1,Minimal,High,35.7406169854759,-79.2658530358532
+10005502,Chowan Law Enforcement Center,Edenton,Chowan,NC,27932,NA,County,Not Available,Open,1,Minimal,High,36.0655130055107,-76.6115590262281
+10005512,Davidson County Detention Facility,Lexington,Davidson,NC,27292,283,County,Not Available,Open,1,Minimal,Medium-High,35.8264700117644,-80.2544199769639
+10005510,Davie County Detention Center,Mocksville,Davie,NC,27028,72,County,Not Available,Open,1,Minimal,High,35.8819709931882,-80.5923199749516
+10001762,Durham County Detention Facility,Durham,Durham,NC,27701,736,County,Maximum,Open,1,Minimal,High,35.9927769871395,-78.9008020418234
+10004144,Hertford County Detention Center,Winton,Hertford,NC,27986,92,County,Medium,Open,1,Minimal,High,36.3977239962657,-76.9355670255309
+10005507,Nash County Detention Facility,Nashville,Nash,NC,27856,296,County,Not Available,Open,6,Major,High,35.9761140150838,-77.967698992215
+10004150,Dillon Regional Juvenile Detention Center,Butner,Granville,NC,27509,90,State,Juvenile,Closed,1,Minimal,High,36.1474699974747,-78.7912809936289
+10005526,Cherokee County Jail,Murphy,Cherokee,NC,28906,150,County,Maximum,Open,1,Minimal,High,35.1017919951593,-84.0287090018525
+10005505,Avery County Jail / Sheriff,Newland,Avery,NC,28657,62,County,Not Available,Open,1,Minimal,High,36.0865629818693,-81.9266909649254
+10004143,Odom Correctional Institution,Jackson,Northampton,NC,27845,352,State,Minimum,Open,1,Minimal,High,36.3902219,-77.4228097
+10004146,Warren Correctional Institution,Manson,Warren,NC,27553,809,State,Close,Open,1,Minimal,High,36.4164309792297,-78.271424965128
+10005503,Chowan County Jail,Edenton,Chowan,NC,27932,23,County,Not Available,Open,3,Moderate,High,36.0605980917852,-76.6069356453409
+10001794,Robeson Crv Center,Lumberton,Robeson,NC,28360,192,State,Minimum,Open,1,Minimal,High,34.6258669755984,-79.0726949381619
+10001024,Cleveland Correctional Center,Shelby,Cleveland,NC,28152,142,State,Medium,Closed,1,Minimal,Medium,35.2834393123824,-81.4873093447971
+10004161,High Point Detention Center,High Point,Guilford,NC,27260,274,County,Not Available,Open,7,Severe,Medium-High,35.9550670143008,-79.9979370087376
+10004227,Wilmington Residential Facility For Women,Wilmington,New Hanover,NC,28403,36,State,Minimum,Closed,1,Minimal,High,34.2378810114404,-77.9028109916965
+10004182,Randolph County Jail,Asheboro,Randolph,NC,27205,195,County,Not Available,Open,1,Minimal,Medium,35.6674753464452,-79.8319851714621
+10004224,Robeson County Jail,Lumberton,Robeson,NC,28358,420,County,Not Available,Open,1,Minimal,High,34.5872819864132,-79.0517389956171
+10004212,Sampson County Detention Center,Clinton,Sampson,NC,28328,300,County,Maximum,Open,1,Minimal,High,34.9924680055084,-78.3029160268153
+10004154,Wilkes County Female Detention Center,North Wilkesboro,Wilkes,NC,28659,NA,County,Not Available,Closed,1,Minimal,High,36.1728089546513,-81.1390236675998
+10006129,Pamlico County Jail,Bayboro,Pamlico,NC,28515,108,County,Not Available,Open,6,Major,High,35.1435399917623,-76.7701599731902
+10005525,Macon County Detention Center,Franklin,Macon,NC,28734,75,County,Not Available,Open,1,Minimal,Medium-High,35.1977760182683,-83.3718490057494
+10005514,Wilson County Detention Center,Wilson,Wilson,NC,27894,296,County,Not Available,Open,1,Minimal,Medium-High,35.7262719868339,-77.909794039051
+10005497,Alleghany County Jail,Sparta,Alleghany,NC,28675,76,County,Not Available,Open,1,Minimal,High,36.5066819901144,-81.1203160049023
+10005529,Hoke County Detention Center,Raeford,Hoke,NC,28376,215,County,Not Available,Open,1,Minimal,High,34.9808700079941,-79.2228660263228
+10001020,Umstead Correctional Center,Butner,Granville,NC,27509,114,State,Minimum,Closed,1,Minimal,High,36.1291642119091,-78.7693142140105
+10006122,Yancey County Detention Center,Burnsville,Yancey,NC,28714,45,County,Not Available,Open,1,Minimal,High,35.9171087305561,-82.2988092746304
+10005506,Alamance County Detention Center,Graham,Alamance,NC,27253,396,County,Not Available,Open,1,Minimal,High,36.0685340110532,-79.402803023999
+10006121,Albemarle District Jail,Elizabeth City,Pasquotank,NC,27909,248,County,Not Available,Open,5,Major,High,36.3574940042372,-76.3070839626282
+10006433,Alexander County Law Enforcement Center,Taylorsville,Alexander,NC,28681,164,County,Not Available,Open,1,Minimal,Medium,35.9082869840359,-81.1821290204218
+10001791,Anson County Jail,Wadesboro,Anson,NC,28170,60,County,Not Available,Open,1,Minimal,High,34.9669850081983,-80.0758659933116
+10005496,Ashe County Jail,Jefferson,Ashe,NC,28640,165,County,Not Available,Open,10,Extreme,High,36.4185399917972,-81.4603640332168
+10005515,Beaufort County Detention Center,Washington,Beaufort,NC,27889,85,County,Not Available,Open,5,Major,High,35.5437969907857,-77.0548600317235
+10004228,Brunswick County Detention Center,Bolivia,Brunswick,NC,28422,444,County,Not Available,Open,1,Minimal,Medium-High,34.0588870197809,-78.1639729897324
+10002641,Buncombe County Detention Center,Asheville,Buncombe,NC,28801,604,County,Maximum,Open,1,Minimal,High,35.5961040060949,-82.5477650121542
+10002637,Burke-Catawba District Confinement Facility,Morganton,Burke,NC,28655,176,County,Not Available,Open,1,Minimal,High,35.7210149828908,-81.6804469943421
+10002636,Burke County Jail (Downtown Jail),Morganton,Burke,NC,28655,66,County,Not Available,Open,1,Minimal,High,35.7454880027778,-81.6852420296917
+10001785,Cabarrus County Jail,Concord,Cabarrus,NC,28025,665,County,Not Available,Open,1,Minimal,High,35.4091500143563,-80.5779519679853
+10002635,Caldwell County Detention Center,Lenoir,Caldwell,NC,28645,185,County,Not Available,Open,1,Minimal,Medium-High,35.8908320059492,-81.5709159716828
+10002642,Cleveland County Law Enforcement Detention Center,Shelby,Cleveland,NC,28150,NA,County,Not Available,Open,1,Minimal,High,35.2907799814319,-81.5354880138931
+10002643,Cleveland County Detention Center,Shelby,Cleveland,NC,28150,NA,County,Not Available,Open,1,Minimal,High,35.2865959868238,-81.5443099669853
+10001800,Columbus County Jail,Whiteville,Columbus,NC,28472,192,County,Not Available,Open,1,Minimal,Medium-High,34.336745014571,-78.7190159963067
+10006128,Craven County Jail,New Bern,Craven,NC,28563,292,County,Maximum,Open,1,Minimal,High,35.1329090144173,-77.1829869771297
+10004214,Cumberland County Detention Center,Fayetteville,Cumberland,NC,28301,884,County,Not Available,Open,6,Major,High,35.0498710084007,-78.8804569835218
+10005498,Currituck County Jail,Maple,Currituck,NC,27956,62,County,Not Available,Open,1,Minimal,High,36.399554017186,-76.0194799937398
+10005528,Duplin County Jail,Kenansville,Duplin,NC,28349,97,County,Not Available,Open,1,Minimal,High,34.9634840129705,-77.9620840390968
+10004158,Bridges Juvenile Crisis & Assessment Center,Winston-Salem,Forsyth,NC,27105,16,County,Juvenile,Open,1,Minimal,Medium,36.172691018401,-80.2783700080022
+10005499,Granville County Detention Center,Oxford,Granville,NC,27565,87,County,Not Available,Open,1,Minimal,High,36.3125509937818,-78.5878589929025
+10005517,Greene County Sheriff's Department,Snow Hill,Greene,NC,28580,96,County,Not Available,Open,1,Minimal,High,35.4553589855579,-77.6698889665631
+10001757,Greensboro Detention Center,Greensboro,Guilford,NC,27401,1032,County,Maximum,Open,1,Minimal,High,36.0713470196684,-79.7955670206787
+10004162,Guilford County Sheriff's Prison Farm,Elon,Guilford,NC,27244,134,County,Minimum,Closed,1,Not Available,Low,36.1440979997367,-79.5442229972893
+10001758,Guilford County Juvenile Detention Center,Greensboro,Guilford,NC,27409,44,County,Juvenile,Open,1,Minimal,High,36.0842259815355,-79.9400879628677
+10004152,Halifax County Jail,Halifax,Halifax,NC,27839,85,County,Not Available,Open,1,Minimal,Medium,36.3217194468751,-77.5910473857079
+10004196,Harnett County Jail,Lillington,Harnett,NC,27546,300,County,Maximum,Open,1,Minimal,Medium,35.4170979864044,-78.8092579966454
+10004207,Henderson County Detention Center,Hendersonville,Henderson,NC,28792,222,County,Not Available,Open,1,Minimal,Medium-High,35.3158249823916,-82.4560389958583
+10004191,Johnston County Detention Center,Smithfield,Johnston,NC,27577,191,County,Not Available,Open,1,Minimal,High,35.5114462735326,-78.3476027309416
+10005516,Hyde County Sheriff's Office,Swan Quarter,Hyde,NC,27885,32,County,Not Available,Open,9,Extreme,High,35.4208180007622,-76.318645037859
+10004175,Iredell County Detention Center,Statesville,Iredell,NC,28687,277,County,Maximum,Open,1,Minimal,High,35.788200002065,-80.8861210201337
+10004200,Mecklenburg County Jail North,Charlotte,Mecklenburg,NC,28269,722,County,Medium,Open,1,Minimal,High,35.314933986084,-80.8460700236475
+10001783,Lincoln County Detention Center,Lincolnton,Lincoln,NC,28092,168,County,Not Available,Open,1,Minimal,Medium-High,35.4892349920651,-81.2375690235
+10005509,Martin County Detention Center,Williamston,Martin,NC,27892,NA,County,Not Available,Not Available,1,Minimal,Medium-High,35.8563859881164,-77.0517439753989
+10005521,Montgomery County Detention Center,Troy,Montgomery,NC,27371,106,County,Maximum,Open,1,Minimal,Medium-High,35.3789239914058,-79.8782290145188
+10004198,Moore County Jail,Carthage,Moore,NC,28327,272,County,Not Available,Open,1,Minimal,Medium,35.3421890015445,-79.4201020148676
+10001803,New Hanover County Detention Center,Castle Hayne,New Hanover,NC,28429,672,County,Not Available,Open,1,Minimal,High,34.3224319956341,-77.8926165602975
+10006120,Northampton County Detention Center,Jackson,Northampton,NC,27845,92,County,Not Available,Open,1,Minimal,High,36.3894769998218,-77.4198749835695
+10004164,Orange County Detention Center,Hillsborough,Orange,NC,27278,129,County,Not Available,Open,1,Minimal,High,36.0748949954635,-79.0983759887043
+10006132,Pender County Jail,Burgaw,Pender,NC,28425,92,County,Not Available,Open,1,Minimal,High,34.552315997217,-77.9250829657191
+10004151,Person County Jail,Roxboro,Person,NC,27573,135,County,Not Available,Open,1,Minimal,High,36.3952409831785,-78.9854770335301
+10004186,Pitt County Detention Center,Greenville,Pitt,NC,27834,596,County,Maximum,Open,3,Moderate,Medium,35.6394449833964,-77.3623199748631
+10006130,Richmond County Jail,Rockingham,Richmond,NC,28379,72,County,Not Available,Open,1,Minimal,High,34.9370996994337,-79.7732193785995
+10004149,Rockingham County Detention Center,Reidsville,Rockingham,NC,27320,232,County,Not Available,Open,1,Minimal,Medium,36.3852490002221,-79.7486270217917
+10001772,Rowan County Detention Center,Salisbury,Rowan,NC,28144,210,County,Maximum,Open,1,Minimal,High,35.6696959844184,-80.4687040021963
+10006119,Stokes County Jail,Danbury,Stokes,NC,27016,68,County,Not Available,Open,1,Minimal,Medium-High,36.4141249919376,-80.2165070363397
+10006125,Swain County Jail / Sheriff,Bryson City,Swain,NC,28713,109,County,Not Available,Open,1,Minimal,High,35.4171279936177,-83.4532419794487
+10006126,Transylvania County Detention Center,Brevard,Transylvania,NC,28712,128,County,Not Available,Open,1,Minimal,High,35.2643502040183,-82.7122918812576
+10004217,Union County Jail,Monroe,Union,NC,28112,264,County,Not Available,Open,1,Minimal,High,34.9773310008353,-80.4660509622032
+10004147,Vance County Jail,Henderson,Vance,NC,27536,150,County,Not Available,Open,1,Minimal,High,36.3304419984717,-78.4069959625634
+10006819,Rowan County Detention Annex,Salisbury,Rowan,NC,28145,160,County,Medium,Open,1,Minimal,High,35.6176069824107,-80.5397729857544
+10004172,Wake County Detention Center,Raleigh,Wake,NC,27603,NA,County,Maximum,Open,1,Minimal,High,35.7342109902456,-78.6390180227528
+10001746,Warren County Detention Facility,Warrenton,Warren,NC,27589,37,County,Not Available,Open,1,Minimal,High,36.3937179913715,-78.1348169586318
+10004155,Wilkes County Jail - Old,Wilkesboro,Wilkes,NC,28697,NA,County,Not Available,Closed,1,Minimal,High,36.1494889884021,-81.1519150255024
+10001790,Anson Ci - Female,Polkton,Anson,NC,28135,1850,State,Close,Open,1,Minimal,High,34.9867170141017,-80.1817910374057
+10006820,Wilkes County Jail,Wilkesboro,Wilkes,NC,28697,240,County,Not Available,Open,1,Minimal,High,36.1416063999193,-81.1504884063313
+10001776,Maury Correctional Institution,Hookerton,Greene,NC,28538,1504,State,Close,Open,9,Extreme,High,35.4480249879174,-77.6079069718755
+10004222,Onslow County Detention Center,Jacksonville,Onslow,NC,28540,528,County,Not Available,Open,1,Minimal,High,34.7516169933377,-77.4312120105285
+10004221,Scotland County Jail,Laurinburg,Scotland,NC,28352,109,County,Not Available,Open,6,Major,High,34.7753159863759,-79.4597500094491
+10004195,Wayne County Detention Center,Goldsboro,Wayne,NC,27530,200,County,Maximum,Open,1,Minimal,High,35.3815119878303,-77.9943940127242
+10005519,Jackson County Jail,Sylva,Jackson,NC,28779,72,County,Not Available,Open,1,Minimal,Medium-High,35.3796830146479,-83.2249350302038
+10005518,Lee County Sheriff's Department,Sanford,Lee,NC,27331,126,County,Not Available,Open,1,Minimal,High,35.4675290060544,-79.1638440169226
+10006131,Clay County Jail,Hayesville,Clay,NC,28904,52,County,Not Available,Open,1,Minimal,Medium-High,35.0412490056088,-83.8291850051979
+10004176,Alexander Regional Juvenile Detention Center,Taylorsville,Alexander,NC,28681,24,State,Juvenile,Open,1,Minimal,High,35.9082799851467,-81.1783809685979
+10006123,Madison County Jail / Sheriff / Juvenile Detention Center,Marshall,Madison,NC,28753,68,County,Not Available,Open,6,Major,High,35.8044610199539,-82.6532250282603
+10005523,Lenoir County Jail / Sheriff,Kinston,Lenoir,NC,28502,285,County,Not Available,Open,1,Minimal,High,35.2592299949654,-77.5805650360792
+10004142,Surry County Detention Center,Dobson,Surry,NC,27017,149,County,Not Available,Open,1,Minimal,Medium-High,36.3971370115863,-80.7222669668134
+10001744,Gates Correctional Center,Gatesville,Gates,NC,27938,96,State,Minimum,Closed,1,Minimal,High,36.4374538543418,-76.7240153522176
+10004215,Cumberland Regional Juvenile Detention Center,Fayetteville,Cumberland,NC,28306,18,State,Juvenile,Open,1,Minimal,High,35.0169569929209,-78.8907780399969
+10005501,Watauga County Detention Center,Boone,Watauga,NC,28607,106,County,Not Available,Open,9,Extreme,High,36.2193389917814,-81.7090960041197
+10001755,Franklin County Detention Center,Louisburg,Franklin,NC,27549,176,County,Not Available,Open,1,Minimal,High,36.0944099938937,-78.319566006921
+10001780,Fpc Seymour Johnson,Goldsboro,Wayne,NC,27531,NA,Federal,Minimum,Closed,9,Extreme,Medium,35.3532889819657,-77.971172201303
+10001767,John H Baker Jr. Public Safety Center,Raleigh,Wake,NC,27602,NA,County,Not Available,Open,1,Minimal,High,35.7763220070751,-78.6411699925741
+10004169,Edgecombe County Detention Center,Tarboro,Edgecombe,NC,27886,255,County,Not Available,Open,7,Severe,Medium,35.9104830007583,-77.5903899677053
+10004163,Dare County Jail,Manteo,Dare,NC,27954,133,County,Not Available,Open,2,Low,High,35.9190248488884,-75.6904220243623
+10004178,North Piedmont Correctional Center For Women,Lexington,Davidson,NC,27292,136,State,Minimum,Closed,1,Minimal,High,35.8143838882401,-80.2324529768774
+10004199,Gatling Juvenile Center,Huntersville,Mecklenburg,NC,28070,30,County,Juvenile,Closed,1,Minimal,High,35.4100353478619,-80.8549287590229
+10004202,Mecklenburg County Work Release / Restitution Ctr,Charlotte,Mecklenburg,NC,28204,160,County,Minimum,Closed,1,Minimal,High,35.2202359983792,-80.8344640214157
+10004180,Mcdowell County Jail,Marion,Mcdowell,NC,28752,133,County,Not Available,Open,1,Minimal,Medium-High,35.6639079869091,-82.0313260341209
+10004220,Richmond Juvenile Detention Center,Rockingham,Richmond,NC,28379,30,State,Juvenile,Closed,1,Minimal,High,34.9633159977213,-79.7953080198706
+10004156,Perquimans Juvenile Detention Center,Hertford,Perquimans,NC,27944,24,State,Juvenile,Closed,1,Minimal,High,36.2134400178741,-76.443373959718
+10004206,Stanley County Detention Center,Albemarle,Stanly,NC,28001,135,County,Not Available,Open,7,Severe,High,35.3487970006414,-80.1974940300907
+10004171,Wake County Detention Annex,Raleigh,Wake,NC,27603,400,County,Not Available,Open,1,Minimal,High,35.7332759889463,-78.6422820196684
+10005527,Jones County Jail,Trenton,Jones,NC,28585,21,County,Not Available,Open,1,Minimal,High,35.0631399802226,-77.3532930004193
+10005511,Washington County Jail,Plymouth,Washington,NC,27962,42,County,Not Available,Open,1,Minimal,High,35.8669499940551,-76.7488130260021
+10005522,Graham County Jail,Robbinsville,Graham,NC,28771,8,County,Not Available,Open,1,Minimal,High,35.3229938474992,-83.8064902821557
+10006148,Fci Butner Medium I,Butner,Granville,NC,27509,492,Federal,Medium,Open,1,Minimal,High,36.137455,-78.7617299999999
+10001761,Fci Butner Medium Ii,Butner,Granville,NC,27509,1151,Federal,Medium,Open,1,Minimal,Medium,36.137455,-78.7617299999999
+10004211,Gaston County Jail,Gastonia,Gaston,NC,28052,584,County,Not Available,Open,1,Minimal,High,35.2674880136119,-81.18377396892
+10001023,Alexander Correctional Institution,Taylorsville,Alexander,NC,28681,1180,State,Close,Open,1,Minimal,High,35.8845548667156,-81.17033947894
+10001759,Bertie Correctional Institution,Windsor,Bertie,NC,27983,1504,State,Close,Open,1,Minimal,High,35.9754769904425,-76.9083369881419
+10004216,Carteret Correctional Center,Newport,Carteret,NC,28570,300,State,Minimum,Open,4,Moderate,High,34.7828589867721,-76.8481010277048
+10004177,Davidson Correctional Center,Lexington,Davidson,NC,27292,258,State,Minimum,Open,1,Minimal,Medium,35.8164574705301,-80.2325763812119
+10004219,Morrison Correctional Institution,Hoffman,Richmond,NC,28347,801,State,Medium,Open,1,Minimal,High,35.0230909953933,-79.6101829594049
+10001763,Nash Correctional Institution,Nashville,Nash,NC,27856,654,State,Medium,Open,1,Minimal,High,35.9705651775013,-78.0174795429231
+10001801,New Hanover Correctional Center,Wilmington,New Hanover,NC,28402,384,State,Minimum,Open,1,Minimal,High,34.2661900093156,-77.9236950063723
+10004173,North Carolina Correctional Institution For Women,Raleigh,Wake,NC,27610,1776,State,Close,Open,1,Minimal,High,35.7628680047406,-78.6200969659817
+10004165,Orange Correctional Center,Hillsborough,Orange,NC,27278,200,State,Minimum,Open,1,Minimal,High,36.0532900113861,-79.1013750336605
+10001788,Pamlico Correctional Institution,Bayboro,Pamlico,NC,28515,550,State,Medium,Open,6,Major,High,35.1604910079206,-76.7717080268877
+10001752,Pasquotank Correctional Institution,Elizabeth City,Pasquotank,NC,27906,896,State,Close,Open,5,Major,Medium,36.3592840015699,-76.3110380416322
+10001753,Pasquotank C.i. Minimum Security Unit,Elizabeth City,Pasquotank,NC,27906,256,State,Minimum,Open,1,Minimal,High,36.3592840015699,-76.3110380416322
+10004226,Pender Correctional Institution,Burgaw,Pender,NC,28425,768,State,Medium,Open,7,Severe,High,34.5545069847975,-77.9395770365091
+10004183,Piedmont Correctional Institution,Salisbury,Rowan,NC,28147,952,State,Medium,Open,1,Minimal,High,35.6219560166923,-80.5457939582625
+10001747,Polk Correctional Institution,Butner,Granville,NC,27509,904,State,Close,Open,1,Minimal,High,36.142715263618,-78.7678650528604
+10004213,Sampson Correctional Institution,Clinton,Sampson,NC,28328,452,State,Medium,Open,7,Severe,High,35.0135462750486,-78.3435863756636
+10001777,Sanford Correctional Center,Sanford,Lee,NC,27330,298,State,Minimum,Open,1,Minimal,Medium-High,35.4723480136471,-79.1588230054634
+10001793,Scotland Correctional Institution,Laurinburg,Scotland,NC,28353,1652,State,Close,Open,1,Minimal,Medium-High,34.8117055905472,-79.3595489439731
+10006582,Southern Correctional Institution - Minimum Custody Unit,Troy,Montgomery,NC,27371,200,State,Minimum,Open,1,Minimal,Medium,35.3825469852344,-79.8746090381754
+10006217,Swannanoa Correctional Center For Women,Black Mountain,Buncombe,NC,28711,366,State,Minimum,Open,1,Minimal,High,35.6144203996651,-82.371308686346
+10001021,Tyrrell Prison Work Farm,Columbia,Tyrrell,NC,27925,620,State,Minimum,Open,5,Major,High,35.95804502068,-76.2279789970387
+10006448,Mecklenburg County Jail North - Annex,Charlotte,Mecklenburg,NC,28269,NA,County,Medium,Not Available,6,Major,High,35.314933986084,-80.8460700236475
+10004174,Wake Correctional Center,Raleigh,Wake,NC,27610,414,State,Minimum,Open,1,Minimal,Medium,35.7628680047406,-78.6200969659817
+10001745,Ci Rivers,Winton,Hertford,NC,27986,1450,Federal,Not Available,Open,1,Minimal,High,36.4022835476044,-76.9580260989573
+10002639,Buncombe Correctional Center,Asheville,Buncombe,NC,28814,182,State,Minimum,Closed,1,Minimal,High,35.6237707000001,-82.5545782
+10004153,Wilkes Correctional Center,North Wilkesboro,Wilkes,NC,28659,268,State,Minimum,Open,1,Minimal,Medium-High,36.16557043893,-81.133206983194
+10001802,New Hanover Regional Juvenile Detention Center,Castle Hayne,New Hanover,NC,28429,18,State,Juvenile,Open,1,Minimal,High,34.3192505168002,-77.8912974215126
+10004185,Pitt Regional Juvenile Detention Center,Greenville,Pitt,NC,27834,18,State,Juvenile,Open,1,Minimal,High,35.6364443565169,-77.3646655639882
+10001768,Wake Regional Juvenile Detention Center,Raleigh,Wake,NC,27610,24,State,Juvenile,Open,1,Minimal,High,35.7889729811759,-78.5724709921388
+10006216,Chatham Youth Development Center,Siler City,Chatham,NC,27344,32,State,Juvenile,Open,1,Minimal,High,35.7200710129552,-79.4239710175544
+10006584,Lenoir Youth Development Center,Kinston,Lenoir,NC,28504,44,State,Juvenile,Open,1,Minimal,Medium,35.3085100116713,-77.63056401053
+10004166,Durham County Youth Home,Durham,Durham,NC,27704,14,County,Juvenile,Open,1,Minimal,High,36.03276700528,-78.9097379887988
+10004208,Dobbs Youth Development Center,Kinston,Lenoir,NC,28504,43,State,Juvenile,Closed,1,Minimal,High,35.3113089805987,-77.6323330111952
+10006585,Edgecombe Youth Development Center,Rocky Mount,Edgecombe,NC,27801,44,State,Juvenile,Open,1,Minimal,Medium,35.9945319900264,-77.770087997322
+10004204,Stonewall Jackson Youth Development Center,Concord,Cabarrus,NC,28027,96,State,Juvenile,Open,1,Minimal,High,35.3625890032214,-80.6007840207781
+10006348,Burke Crv Center,Morganton,Burke,NC,28655,248,State,Minimum,Open,1,Not Available,Low,35.6782049991555,-81.6819350336129
+10004209,Gaston Reg Juvenile Detention Center,Dallas,Gaston,NC,28034,24,State,Juvenile,Closed,1,Minimal,High,35.3200286242633,-81.2091517364339
+10004181,Marion Minimum Security Unit,Marion,Mcdowell,NC,28752,116,State,Minimum,Open,1,Minimal,Medium,35.6535720106464,-81.9538759914943
+10001751,Caledonia Correctional Institution - Minimum,Tillery,Halifax,NC,27882,1038,State,Minimum,Open,1,Minimal,High,36.2927753936739,-77.4623000538739
+10001773,Black Mountain Correctional Center For Women,Black Mountain,Buncombe,NC,28711,80,State,Minimum,Closed,1,Minimal,High,35.6135660979778,-82.3598087164944
+10001795,Bladen Correctional Center,Elizabethtown,Bladen,NC,28337,172,State,Minimum,Closed,1,Minimal,High,34.6539010175755,-78.5184570022479
+10004188,Western Area Multipurpose Juvenile Crisis And Assesment Center,Asheville,Buncombe,NC,28806,4,State,Juvenile,Open,1,Minimal,High,35.6151300042938,-82.6281099964995
+10004205,Cabarrus Correctional Center,Mount Pleasant,Cabarrus,NC,28124,NA,State,Minimum,Closed,1,Minimal,High,35.3973299802269,-80.4125780241622
+10004203,Charlotte Correctional Center,Charlotte,Mecklenburg,NC,28208,252,State,Minimum,Closed,1,Minimal,High,35.195677985994,-80.9221399859163
+10004218,Duplin Correctional Center,Kenansville,Duplin,NC,28349,328,State,Minimum,Closed,1,Minimal,High,34.9785900465113,-77.9397899368497
+10001765,Fountain Correctional Center For Women,Rocky Mount,Edgecombe,NC,27804,510,State,Minimum,Closed,1,Minimal,High,35.9985309960314,-77.769654988204
+10004167,Durham Correctional Center,Durham,Durham,NC,27705,216,State,Minimum,Closed,1,Minimal,Medium,36.0625686527674,-78.9298695817972
+10001756,Guilford Correctional Center,Mcleansville,Guilford,NC,27301,NA,State,Minimum,Closed,1,Minimal,Medium,36.1138500161999,-79.6977069600009
+10004225,Mccain Correctional Hospital,Raeford,Hoke,NC,28376,411,State,Minimum,Closed,1,Not Available,Low,35.0581879937361,-79.3468870126395
+10004223,Evergreen Rehabilitation Center,St. Pauls,Robeson,NC,28384,NA,State,Not Available,Closed,1,Minimal,High,34.8472719848376,-78.980479994314
+10005520,Samarkand Youth Development Center,Eagle Springs,Moore,NC,27242,70,State,Juvenile,Closed,1,Minimal,High,35.2599721958633,-79.6948193479155
+10001022,North Carolina Correctional Institution For Women - Minimum,Raleigh,Wake,NC,27610,1776,State,Minimum,Open,1,Minimal,Medium,35.7628680047406,-78.6200969659817
+10001781,Wayne Correctional Center,Goldsboro,Wayne,NC,27530,428,State,Medium,Closed,1,Not Available,Low,35.385464013268,-78.0344790397372
+10004179,Western Youth Institution,Morganton,Burke,NC,28655,785,State,Juvenile,Closed,1,Not Available,Low,35.6792010207098,-81.6835779704543
+10006586,Central Regional Hospital,Butner,Granville,NC,27509,76,State,Not Available,Open,1,Minimal,High,36.1459850175986,-78.7720170331988
+10001774,Haywood Correctional Center,Waynesville,Haywood,NC,28786,128,State,Minimum,Closed,9,Extreme,Medium-High,35.4715759984551,-83.0040950155836
+10001764,Edgecombe County Detention Center Annex,Tarboro,Edgecombe,NC,27886,93,County,Not Available,Open,1,Minimal,High,35.8976130075276,-77.5326499703958
+10001792,Union Correctional Center,Monroe,Union,NC,28112,82,State,Minimum,Closed,1,Minimal,Medium-High,34.9809949821704,-80.5220799616175
+10005524,Polk County Jail,Columbus,Polk,NC,28722,25,County,Not Available,Open,1,Minimal,High,35.250467008562,-82.1981229736461
+10001779,Rutherford County Detention Center,Rutherfordton,Rutherford,NC,28139,208,County,Not Available,Open,1,Minimal,High,35.3698639922635,-81.957868962529
+10002634,Bertie Martin Regional Jail,Windsor,Bertie,NC,27983,90,County,Not Available,Open,1,Minimal,High,35.9758340176082,-76.9435070347709
+10005504,Yadkin County Jail,Yadkinville,Yadkin,NC,27055,96,County,Maximum,Open,1,Minimal,Medium-High,36.1353280144442,-80.6581510233964
+10001748,Fci Butner Low,Butner,Granville,NC,27509,992,Federal,Minimum,Open,1,Minimal,Medium,36.137455,-78.7617299999999
+10001760,Fmc Butner,Butner,Granville,NC,27509,868,Federal,Maximum,Open,1,Minimal,High,36.137455,-78.7617299999999
+10004168,Fci Butner Medium I Camp,Butner,Granville,NC,27509,296,Federal,Minimum,Open,1,Minimal,Medium,36.137455,-78.7617299999999
+10001749,Caswell Correctional Center,Blanch,Caswell,NC,27212,460,State,Medium,Open,1,Minimal,Medium,36.4188540197997,-79.3417670109038
+10002638,Catawba Correctional Center,Newton,Catawba,NC,28658,246,State,Minimum,Open,1,Minimal,High,35.6151059901412,-81.2106289999609
+10002640,Craggy Correctional Center,Asheville,Buncombe,NC,28804,408,State,Medium,Open,1,Minimal,Medium,35.6631119994741,-82.6155259938052
+10001787,Craven Correctional Institution,Vanceboro,Craven,NC,28586,850,State,Medium,Open,1,Minimal,High,35.3169650050425,-77.1174910371739
+10001750,Dan River Prison Work Farm,Blanch,Caswell,NC,27212,640,State,Minimum,Open,1,Minimal,High,36.4326520154405,-79.3469639585106
+10004159,Forsyth Correctional Center,Winston-Salem,Forsyth,NC,27105,248,State,Minimum,Open,1,Minimal,Medium,36.1444240138607,-80.2619429865209
+10004157,Franklin Correctional Center,Bunn,Franklin,NC,27508,452,State,Medium,Open,1,Minimal,High,35.9449529908341,-78.2497060290769
+10001775,Greene Correctional Institution,Maury,Greene,NC,28554,616,State,Minimum,Open,8,Severe,Medium,35.4795818220921,-77.5939162789231
+10001025,Harnett Correctional Institution,Lillington,Harnett,NC,27546,988,State,Medium,Open,1,Minimal,High,35.3892649968105,-78.8004350377249
+10004193,Hyde Correctional Institution,Fairfield,Hyde,NC,27826,736,State,Medium,Open,6,Major,High,35.4942179915934,-76.3342570030756
+10004197,Lincoln Correctional Center,Lincolnton,Lincoln,NC,28092,202,State,Minimum,Open,1,Minimal,High,35.4836305169404,-81.2360836556554
+10001027,Lumberton Correctional Institution,Lumberton,Robeson,NC,28359,768,State,Medium,Open,1,Minimal,High,34.5871449842058,-79.0527370288282
+10001770,Marion Correctional Institution,Marion,Mcdowell,NC,28752,793,State,Close,Open,1,Minimal,High,35.6401289886051,-81.9460590285929
+10001754,Mountain View Correctional Institution,Spruce Pine,Avery,NC,28777,884,State,Medium,Open,1,Minimal,High,35.9316750084663,-82.0036009615304
+10001782,Neuse Correctional Institution,Goldsboro,Wayne,NC,27533,788,State,Minimum,Open,1,Not Available,Low,35.3867699976018,-78.0382379880353
+10004184,Piedmont Correctional Institution - Minimum Security Unit,Salisbury,Rowan,NC,28147,276,State,Minimum,Open,1,Minimal,High,35.6200449846778,-80.532813994462
+10001771,Randolph Correctional Center,Asheboro,Randolph,NC,27203,226,State,Minimum,Open,1,Minimal,High,35.6687323010313,-79.8221381290296
+10001778,Rutherford Correctional Center,Spindale,Rutherford,NC,28160,236,State,Minimum,Open,1,Minimal,Medium-High,35.3657559796077,-81.9150169854588
+10001784,Southern Correctional Institution,Troy,Montgomery,NC,27371,624,State,Close,Open,1,Minimal,Medium-High,35.3825469852344,-79.8746090381754
+10001799,Tabor Correctional Institution,Tabor City,Columbus,NC,28463,1752,State,Close,Open,7,Severe,Medium-High,34.1876649876068,-78.9119249949753
+10004148,Rockingham County Detention Center -Old,Wentworth,Rockingham,NC,27375,90,County,Not Available,Closed,1,Minimal,High,36.3983285135471,-79.7707977580026
+10006124,Swain County Jail,Bryson City,Swain,NC,28713,NA,County,Not Available,Closed,10,Extreme,Medium-High,35.4276082305941,-83.4451610045319
+10006583,Cabarrus Regional Juvenile Detention Center,Concord,Cabarrus,NC,28027,30,State,Juvenile,Open,1,Minimal,Medium,35.3624999874097,-80.6028449631309
+10004160,Forsyth County Law Enforcement Detention Center,Winston-Salem,Forsyth,NC,27101,1016,County,Maximum,Open,1,Minimal,High,36.0971010039081,-80.2423429955926
+10001786,Albemarle Correctional Institution,New London,Stanly,NC,28127,816,State,Medium,Open,1,Minimal,High,35.4161380070337,-80.1373309922113
+10006147,Avery-Mitchell Correctional Institution,Spruce Pine,Avery,NC,28777,816,State,Medium,Open,1,Minimal,High,35.9259679801417,-81.9997789813205
+10004170,Caldwell Correctional Center,Lenoir,Caldwell,NC,28645,238,State,Minimum,Open,1,Minimal,High,35.8547500082547,-81.5207669611651
+10002633,Caledonia Correctional Institution,Tillery,Halifax,NC,27882,1038,State,Medium,Open,1,Not Available,Low,36.3063414019835,-77.4575556529032
+10001766,Central Prison,Raleigh,Wake,NC,27606,752,State,Close,Open,4,Moderate,High,35.7768069839928,-78.6561209609062
+10001798,Columbus Correctional Institution,Whiteville,Columbus,NC,28472,698,State,Medium,Open,1,Minimal,High,34.2794490066727,-78.7203089886905
+10004194,Eastern Correctional Institution,Maury,Greene,NC,28554,429,State,Medium,Open,8,Severe,High,35.4801522530495,-77.5928499612948
+10001769,Foothills Correctional Institution,Morganton,Burke,NC,28655,858,State,Close,Open,1,Minimal,High,35.6755760152245,-81.6804640096056
+10004210,Gaston Correctional Center,Dallas,Gaston,NC,28034,242,State,Minimum,Open,1,Minimal,Medium,35.3123850074189,-81.1949389992258
+10001797,Hoke Correctional Institution,Raeford,Hoke,NC,28376,502,State,Minimum,Open,1,Minimal,High,35.0581879937361,-79.3468870126395
+10004190,Johnston Correctional Institution,Smithfield,Johnston,NC,27577,612,State,Minimum,Open,1,Minimal,High,35.5575280150201,-78.328282012757
+10004192,Haywood County Detention Center,Waynesville,Haywood,NC,28786,150,County,Not Available,Open,9,Extreme,High,35.471449012622,-83.0056829671402
+10001796,Bladen County Jail,Elizabethtown,Bladen,NC,28337,79,County,Not Available,Open,1,Minimal,High,34.6154909881835,-78.6069659602861
+10004201,Mecklenburg County Jail Central,Charlotte,Mecklenburg,NC,28202,1904,County,Maximum,Open,1,Minimal,High,35.2205019980764,-80.8362170126458

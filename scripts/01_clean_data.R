@@ -15,8 +15,6 @@ pacman::p_load(fs,
 ## 1.2 Declare `here` ----
 here::i_am("scripts/01_clean_data.R")
 
-setwd(here())
-
 
 ## 1.3. Create necessary directories ----
 ## Create directory to store source data
@@ -79,9 +77,16 @@ if (!file.exists(here::here("derived_data", "intercept_tidy.csv"))) {
       full_results = FALSE
     )
   
-  ## 2.5 Retain only columns of interest ----
+  ## 2.5 Clean column contents
+  ## Clean string to sentence case
+  intercept_tidy <- as.data.frame(sapply(intercept_tidy, str_to_title))
+  
+  ## Clean state to uppercase
+  intercept_tidy$state <- str_to_upper(intercept_tidy$state)
+  
+  ## 2.6 Retain only columns of interest ----
   intercept_tidy <-
-    intercept_tidy %>% select(
+    intercept_tidy %>% dplyr::select(
       c(
         "facilityid",
         "name",
