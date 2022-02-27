@@ -4,10 +4,11 @@ author: "Mad Bankson | Abhi Bhatia | Pierce Holloway"
 date: "2/26/2022"
 output: 
     html_document:
-        theme: lumen
+        theme: cosmo
+        highlight: tango
         toc: true
         toc_float: 
-            collapsed: false
+            collapsed: true
             smooth_scroll: true
 ---
 
@@ -21,11 +22,51 @@ library(blogdown)
 
 ## Introduction
 
+On February 12, 2020 The Intercept published Climate and Punishment,  a multipart analytical journalism project exploring several natural hazards that create excessive risk for people incarcerated in prison institutions across the United States. While the series covers hazards including flooding, heat, and wildfire, our analysis focuses solely on Aileen Brown’s visualization of prison flood risk titled  Trapped in The Floods. 
 
-## Description of Visualizations
+Trapped in the Floods is a work of hard-hitting journalism that exposes a lay audience to the under-discussed systemic failures of prison disaster management in its current form. In doing so, it invites immediate policy intervention in preparation for climate-driven escalations in severe weather patterns. The article uses the state of Florida and New Orleans Parrish as case studies  representing a wide-spread lack of climate resiliency preparation in the prison system. It documents instances in which flood events, combined with aging prison infrastructure, disrupted essential prison operations, created health hazards including overflowing sewage, and in some cases, forced impromptu evacuation. While officials are quick to dismiss the severity of these events, this piece verifies their occurrence through the accounts of incarcerated people. Even more importantly, they also support their case using data.
+
+The Intercept  argues that severe prison flood impacts are not only verifiable, but with the proper data, prison floods are also predictable (at least to some degree). By providing a data-driven national assessment of prison flood risk, the project’s authors create a compelling basis for the sorts of federal policy interventions they claim are so desperately needed to mitigate future physical flood exposure and social vulnerability.
+
+The centerpiece of the article is a comprehensive visualization of prison locations and risk attributes, as seen in Figure 1 below.  Prison locations on the national scale are portrayed as a series of circular point symbols. The points utilize a blue color gradient to indicate each prison’s flood risk. Users can zoom in on the national map to view prison risk on a regional or individual scale. Clicking an individual prison point brings up a satellite image of the prison to provide context as to the general setting and surrounding land cover context near the prison.
+
 <center>
 <img src="https://media.giphy.com/media/FLGy7pBsMnfPlVsc9E/giphy.gif" alt="Intercept Interactive Map Example" width="800"/>
+<figcaption>Figure 1. Intercept Interactive Map Capability</figcaption>
 </center>
+
+
+## Description of Visualizations
+
+### Objective
+
+This piece is primarily concerned with the question of which areas have the greatest need for flood resiliency interventions. In order to answer this larger question, the visualizations seek to communicate the following:
+
+1. Where are US prisons located?
+2. What is the flood risk associated with the physical environment of each individual facility?
+3. In the aggregate, which states have the largest number of high-risk facilities? 
+
+### Design elements
+
+**Scalability** This is an interactive map covering the entire extent of the lower 48 states. The map attempts to allow users to observe prison locations and their associated flood risk on national, state, local, or facility-level scales. On the individual prison scale, the point symbol format allows users to navigate to prison points and click to bring up a side panel offering additional information. When a prison point is selected, the site presents the facility’s name, location, and security level, as well as an aerial satellite image of the location. On the other hand, when viewed on the larger national scale, the map attempts to show the general distribution of risk throughout the country. A major benefit of point maps is that they theoretically allow users to visually identify clusters of especially high- or low- risk facilities. In sum, point maps display national and regional patterns while artfully tucking away information about individual prisons in an option side panel. 
+
+
+
+**Color** The map uses a blue color gradient to indicate each prison’s flood riskiness on a 1 to 10 scale, with darker levels indicating higher risk. As mentioned previously, the blue gradient was chosen to accompany parallel maps that show fire and extreme heat risk in yellow and red respectively. 
+
+<center>
+<img src="https://imgur.com/a/Wx71XiB" alt="Scale Color" />
+<figcaption>Figure 2. Scale Color</figcaption>
+</center>
+
+**Basemap** The prison data is displayed atop a low-saturation grey basemap from OpenStreetMap. The map depicts water bodies, major roads, and some town names. The color choice and minimal attributes of the base map allow the prison data to remain the central focus of the visualization, providing just enough context to assist the reader in interpretation. 
+
+<center>
+![Basemap Example](https://imgur.com/gallery/YOGufCb)
+<img src="https://imgur.com/gallery/YOGufCb" alt="Basemap Example" width="600"/>
+<figcaption>Figure 3. Basemap Example</figcaption>
+</center>
+
 
 
 
