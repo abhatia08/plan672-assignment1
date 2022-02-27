@@ -1,0 +1,36 @@
+---
+title: "Plan 672 Critique Writeup"
+author: "Mad Bankson | Abhi Bhatia | Pierce Holloway"
+date: "2/26/2022"
+output: 
+    html_document:
+        theme: lumen
+        toc: true
+        toc_float: 
+            collapsed: false
+            smooth_scroll: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(blogdown)
+```
+
+# Prisons and the Deluge: Mapping Prison Flood Exposure
+
+## Introduction
+
+
+## Description of Visualizations
+<center>
+<img src="https://media.giphy.com/media/FLGy7pBsMnfPlVsc9E/giphy.gif" alt="Intercept Interactive Map Example" width="800"/>
+</center>
+
+
+
+
+## Critique
+
+
+## Conclusion
