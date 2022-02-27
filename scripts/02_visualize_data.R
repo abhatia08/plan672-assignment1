@@ -356,16 +356,51 @@ interactive <- interactive + tm_shape(top_10_risk_df) +
   )
 
 
+## With capacity size for  facilities
+interactive <- interactive + tm_shape(intercept_sf) +
+  tm_symbols(
+    col = "flood_risk_rating",
+    palette = c(
+      "#70b8ff",
+      "#429bfa",
+      "#147df5",
+      "#095dd7",
+      "#0000ff",
+      "#0000b8",
+      "#00008f",
+      "#000079",
+      "#000052",
+      "#00003d"
+    ),
+    scale = 1,
+    size = "capacity",
+    shape = 21,
+    border.col = "grey",
+    border.lwd = 1,
+    title.col = "Flood Risk Rating",
+    group = "Facility Capacity",
+    id = "name",
+    popup.vars = c(
+      "City" = "city",
+      "County" = "county",
+      "Capacity" = "capacity",
+      "Flood Risk" = "flood_risk",
+      "Flood Risk Rating" = "flood_risk_rating"
+    )
+  )
+
 
 ## Generate interactive plot
 interactive %>% tmap_leaflet() %>% addLayersControl(
   baseGroups = c("Default", "Topography", "Streets"),
   overlayGroups = c(
     "All Facility Locations (Points)",
-    "Top 10 At-Risk Facility Locations (Points)"
+    "Top 10 At-Risk Facility Locations (Points)",
+    "Facility Capacity"
   ),
   options = layersControlOptions(collapsed = FALSE)
-) %>% hideGroup("Top 10 At-Risk Facility Locations (Points)")
+) %>% hideGroup("Top 10 At-Risk Facility Locations (Points)") %>% 
+  hideGroup("Facility Capacity")
 
 
 
