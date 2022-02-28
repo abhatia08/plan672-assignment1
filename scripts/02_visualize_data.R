@@ -408,6 +408,7 @@ interactive %>% tmap_leaflet() %>% addLayersControl(
 
 ## Save  figure
 ## tmap_save(interactive, filename = here("figures", "interactive.html"))
+htmlwidgets::saveWidget(interactive, here("figures", "interactive1.html"), width = 80, height = "400")
 # NOTE: You should export this as an html from the panel.
 
 

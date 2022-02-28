@@ -15,11 +15,19 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(blogdown)
+library(here)
+library(tidyverse)
 ```
 
-# Prisons and the Deluge <br> Mapping Prison Flood Exposure
+<br /> 
+<center>
+![Cover Image](D://GitHub/plan672-assignment1/figures/markdown_images/prision_flood_cover.png)
+<figcaption>Image source: Charlie Riedel, AP</figcaption>
+</center>
 
+<center>
+# Prisons and the Deluge <br> Mapping Prison Flood Exposure
+</center>
 
 ## Introduction
 
@@ -56,19 +64,24 @@ This is an interactive map covering the entire extent of the lower 48 states. Th
 
 #### **Color** 
 The map uses a blue color gradient to indicate each prison’s flood riskiness on a 1 to 10 scale, with darker levels indicating higher risk. As mentioned previously, the blue gradient was chosen to accompany parallel maps that show fire and extreme heat risk in yellow and red respectively. 
-
+ 
+```{r, echo=FALSE, include=FALSE}
+here::i_am("critique_writeup.Rmd")
+here::here()
+```
+<br /> 
 <center>
-<img src="https://imgur.com/a/Wx71XiB" alt="Scale Color" />
+![Scale Color](D://GitHub/plan672-assignment1/figures/markdown_images/color_gradient_crit.png)
 <figcaption>Figure 2. Scale Color</figcaption>
 </center>
 
 **Basemap** The prison data is displayed atop a low-saturation grey basemap from OpenStreetMap. The map depicts water bodies, major roads, and some town names. The color choice and minimal attributes of the base map allow the prison data to remain the central focus of the visualization, providing just enough context to assist the reader in interpretation. 
 
 <center>
-![Basemap Example](https://imgur.com/gallery/YOGufCb)
+![Basemap Example](D://GitHub/plan672-assignment1/figures/markdown_images/basemap_example.png)
 <figcaption>Figure 3. Basemap Example</figcaption>
 </center>
-
+<br /> 
 
 
 
@@ -81,15 +94,29 @@ While the methodology and conceptual framing of this piece are strong, the visua
 Conveying information via color is generally tricky. Color has a host of different meanings that are culturally specific and context dependent. Furthermore, individual humans physically perceive differently, and various forms of colorblindness should be accounted for. Color schemes should be harmonious but not too similar, differentiable but not too noisy, and narrative but not misleading. It’s a tough balance to strike.
 Will all these factors considered, this map’s use of color to differentiate levels of flood risk is extremely poor. In fact, it is so poor that it drastically interferes with the map’s success as a tool for communicating different levels of flood risk. The primary reason for this is the lack of variation in saturation levels between very low and very high flood risk. When viewing the map on a national level, it is impossible to tell the different risk levels apart:
 
-// include image of map //
+<center>
+![Map Symbology](D://GitHub/plan672-assignment1/figures/markdown_images/map_color_crit.png)
+<figcaption>Figure 4. Map Symbology</figcaption>
+</center>
+
+<br /> 
 
 However, zooming in so that the points are enlarged does not actually help much to differentiate colors: 
-
-// include zoomed in map//
+<br /> 
+<center>
+![Symbology Zoomed In](D://GitHub/plan672-assignment1/figures/markdown_images/symbol_zoom_crit.png)
+<figcaption>Figure 5. Map Symbology Zoomed In</figcaption>
+</center>
+<br /> 
 
 In addition to the larger project’s use of a primary color palette, the map makers likely chose blue for the flood risk map because of its association with water. This is understandable and intuitive. If we were to stick with blue, we would recommend expanding the range so that low-risk properties are significantly less saturated, thereby showing more variation in risk levels so that the facilities most in need of urgent intervention stand out. Something like this gradient, borrowed from an unrelated map, would be ideal:
 
-// include palatte choice//
+<br /> 
+<center>
+![Better Color Gradient](D://GitHub/plan672-assignment1/figures/markdown_images/color_gradient_ex.png)
+<figcaption>Figure 6. A Better Color Gradient</figcaption>
+</center>
+<br /> 
 
 However, it could also be said that blue is not a good color choice for such a grave research topic because of its calming connotations. If we want to address this, a diverging green-red or blue-rust color palette could be a useful alternative because of the colors’ association with positive and negative meanings. Likewise, a unidirectional color ramp in purple, orange, or red could also work. In line with this article’s intention of drawing readers’ attention to the most problematic facilities, a unidirectional palette with high saturation variation is most successful because the eye is naturally drawn towards darker colors. 
 
@@ -101,8 +128,16 @@ The Intercept visualization does not include information on each facilities popu
 ### **Critique C: Facility context**
 
 Satellite images not always helpful
+<br /> 
 
-/// include satellite image example // 
+<center>
+![Satellite images](D://GitHub/plan672-assignment1/figures/markdown_images/satellite_image_example.png)
+<figcaption>Figure 7. Satellite image of Prison Context</figcaption>
+</center>
+<br /> 
+
+
+### **Critique D: Possible Additions**
 
 These two additional toggle-on layers are not especially useful to general lay audiences, but would be very helpful for those with a baseline familiarity with climate data and policy:
 
@@ -112,8 +147,26 @@ Although outdated, could provide context on a more general, non-point specific b
 **Past hurricane flood extent**
 Extents of previous hurricane flooding extents can also be illuminating – Marshall Project . Verify prisoner accounts when officials deny flood impacts. Problematic because it isn’t sufficiently granular, but a helpful piece in combination with other data.
 
+## Improved Visualizations
+
+<br /> 
+```{r, echo=FALSE}
+htmltools::tags$iframe(title = "Interactive Map", 
+                       src = "D:/GitHub/plan672-assignment1/figures/interactive1.html",
+                       width="100%",
+                       height="400",
+                       scrolling="no", 
+                       seamless="seamless", 
+                       frameBorder="0"
+)
+```
 
 
+<br/>
+
+```{r,echo=FALSE}
+htmltools::includeHTML("D:/GitHub/plan672-assignment1/figures/tab_1.html")
+```
 
 
 ## Conclusion
