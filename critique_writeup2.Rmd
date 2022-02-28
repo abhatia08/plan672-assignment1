@@ -1,0 +1,201 @@
+---
+title: "Plan 672 Critique Writeup"
+author: "Mad Bankson | Abhishek Bhatia | Pierce Holloway"
+date: "2/26/2022"
+output: 
+  rmdformats::readthedown:
+    self_contained: true
+    thumbnails: false
+    lightbox: true
+    gallery: false
+    code_folding: hide
+    highlight: tango
+    embed_fonts: true
+    toc_depth: 3
+    toc_float: true
+    collapsed: false
+    smool_scroll: true
+    number_sections: false
+    mathjax: NULL
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# remotes::install_github("juba/rmdformats")
+library(rmdformats)
+library(here)
+
+here::i_am("critique_writeup.Rmd")
+```
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= "Image source: Charlie Riedel, AP", out.width= '800'}
+
+knitr::include_graphics(here("figures","prison_flood_cover.png"))
+
+```
+</center>
+
+<center>
+# Prisons and the Deluge <br> Mapping Prison Flood Exposure
+</center>
+
+## Introduction 
+
+On February 12, 2020 The Intercept published Climate and Punishment,  a multipart analytical journalism project exploring several natural hazards that create excessive risk for people incarcerated in prison institutions across the United States. While the series covers hazards including flooding, heat, and wildfire, our analysis focuses solely on Aileen Brown’s visualization of prison flood risk titled  Trapped in The Floods. 
+
+Trapped in the Floods is a work of hard-hitting journalism that exposes a lay audience to the under-discussed systemic failures of prison disaster management in its current form. In doing so, it invites immediate policy intervention in preparation for climate-driven escalations in severe weather patterns. The article uses the state of Florida and New Orleans Parrish as case studies  representing a wide-spread lack of climate resiliency preparation in the prison system. It documents instances in which flood events, combined with aging prison infrastructure, disrupted essential prison operations, created health hazards including overflowing sewage, and in some cases, forced impromptu evacuation. While officials are quick to dismiss the severity of these events, this piece verifies their occurrence through the accounts of incarcerated people. Even more importantly, they also support their case using data.
+
+The Intercept  argues that severe prison flood impacts are not only verifiable, but with the proper data, prison floods are also predictable (at least to some degree). By providing a data-driven national assessment of prison flood risk, the project’s authors create a compelling basis for the sorts of federal policy interventions they claim are so desperately needed to mitigate future physical flood exposure and social vulnerability.
+
+The centerpiece of the article is a comprehensive visualization of prison locations and risk attributes, as seen in Figure 1 below.  Prison locations on the national scale are portrayed as a series of circular point symbols. The points utilize a blue color gradient to indicate each prison’s flood risk. Users can zoom in on the national map to view prison risk on a regional or individual scale. Clicking an individual prison point brings up a satellite image of the prison to provide context as to the general setting and surrounding land cover context near the prison.
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= "Figure 1. Intercept Interactive Map Capability", out.width= '800'}
+
+knitr::include_graphics("https://media.giphy.com/media/FLGy7pBsMnfPlVsc9E/giphy.gif")
+
+```
+</center>
+
+
+---
+
+## Description of Visualizations
+
+### Objective 
+
+This piece is primarily concerned with the question of which areas have the greatest need for flood resiliency interventions. In order to answer this larger question, the visualizations seek to communicate the following:
+
+1. Where are US prisons located?
+2. What is the flood risk associated with the physical environment of each individual facility?
+3. In the aggregate, which states have the largest number of high-risk facilities? 
+
+### Design elements
+
+#### *Scalability* 
+This is an interactive map covering the entire extent of the lower 48 states. The map attempts to allow users to observe prison locations and their associated flood risk on national, state, local, or facility-level scales. On the individual prison scale, the point symbol format allows users to navigate to prison points and click to bring up a side panel offering additional information. When a prison point is selected, the site presents the facility’s name, location, and security level, as well as an aerial satellite image of the location. On the other hand, when viewed on the larger national scale, the map attempts to show the general distribution of risk throughout the country. A major benefit of point maps is that they theoretically allow users to visually identify clusters of especially high- or low- risk facilities. In sum, point maps display national and regional patterns while artfully tucking away information about individual prisons in an option side panel. 
+
+
+
+#### *Color*
+The map uses a blue color gradient to indicate each prison’s flood riskiness on a 1 to 10 scale, with darker levels indicating higher risk. As mentioned previously, the blue gradient was chosen to accompany parallel maps that show fire and extreme heat risk in yellow and red respectively. 
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= 'Figure 2. Scale Color', out.width= '100%'}
+knitr::include_graphics(here("figures","color_gradient_crit.png"))
+
+```
+</center>
+
+#### *Basemap* 
+
+The prison data is displayed atop a low-saturation grey basemap from OpenStreetMap. The map depicts water bodies, major roads, and some town names. The color choice and minimal attributes of the base map allow the prison data to remain the central focus of the visualization, providing just enough context to assist the reader in interpretation. 
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= 'Figure 3. Basemap Example', out.width= '800'}
+knitr::include_graphics(here("figures","basemap_example.png"))
+
+```
+</center>
+
+---
+
+## Critique
+
+While the methodology and conceptual framing of this piece are strong, the visual choices made to communicate prison flood risk fall short of being clear and compelling. Color choice is the map’s most substantial weakness. In addition, though simpler is generally better for data visualization, the map lacks attributes that could strengthen the study’s argument and allow the reader to further understand important aspects of flood risk. These attributes include facility type, prison capacity, past hurricane extent, and contextual FEMA flood zone designation.
+
+### *Critique A: Color*
+Conveying information via color is generally tricky. Color has a host of different meanings that are culturally specific and context dependent. Furthermore, individual humans physically perceive differently, and various forms of colorblindness should be accounted for. Color schemes should be harmonious but not too similar, differentiable but not too noisy, and narrative but not misleading. It’s a tough balance to strike.
+Will all these factors considered, this map’s use of color to differentiate levels of flood risk is extremely poor. In fact, it is so poor that it drastically interferes with the map’s success as a tool for communicating different levels of flood risk. The primary reason for this is the lack of variation in saturation levels between very low and very high flood risk. When viewing the map on a national level, it is impossible to tell the different risk levels apart:
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= 'Figure 4. Map Symbology', out.width= '800'}
+knitr::include_graphics(here("figures","map_color_crit.png"))
+
+```
+</center>
+
+However, zooming in so that the points are enlarged does not actually help much to differentiate colors: 
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= 'Figure 5. Map Symbology (Zoomed In)', out.width= '800'}
+knitr::include_graphics(here("figures","symbol_zoom_crit.png"))
+
+```
+</center>
+
+In addition to the larger project’s use of a primary color palette, the map makers likely chose blue for the flood risk map because of its association with water. This is understandable and intuitive. If we were to stick with blue, we would recommend expanding the range so that low-risk properties are significantly less saturated, thereby showing more variation in risk levels so that the facilities most in need of urgent intervention stand out. Something like this gradient, borrowed from an unrelated map, would be ideal:
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= 'Figure 6. A Better Color Gradient', out.width= '100%'}
+knitr::include_graphics(here("figures","color_gradient_ex.png"))
+
+```
+</center>
+
+However, it could also be said that blue is not a good color choice for such a grave research topic because of its calming connotations. If we want to address this, a diverging green-red or blue-rust color palette could be a useful alternative because of the colors’ association with positive and negative meanings. Likewise, a unidirectional color ramp in purple, orange, or red could also work. In line with this article’s intention of drawing readers’ attention to the most problematic facilities, a unidirectional palette with high saturation variation is most successful because the eye is naturally drawn towards darker colors. 
+
+### *Critique B: Facility capacity*
+
+The Intercept visualization does not include information on each facilities population capacity. This piece of information would be valuable to include. It is additionally curious that the information is not included as it is available in their dataset. Including this data point can more clearly inform the amount of individuals impacted by flood risk and exposure. 
+
+
+### *Critique C: Facility context*
+
+Satellite images not always helpful
+
+<center>
+```{r, echo=FALSE, fig.align= 'center', fig.cap= 'Figure 7. Satellite image of Prison Context', out.width= '800'}
+knitr::include_graphics(here("figures","satellite_image_example.png"))
+
+```
+</center>
+
+### *Critique D: Possible Additions*
+
+These two additional toggle-on layers are not especially useful to general lay audiences, but would be very helpful for those with a baseline familiarity with climate data and policy:
+
+* *FEMA Floodzone Maps*
+Although outdated, could provide context on a more general, non-point specific basis. IE, if a prison is well within the 500 year floodplain, that’s a pretty powerful visual indicating some sort of problem. Also, since a lot of states still use FEMA designations for emergency planning, showing the difference between First Street’s  more accurate conclusions and FEMA could be even more illuminating.
+
+* *Past hurricane flood extent*
+Extents of previous hurricane flooding extents can also be illuminating – Marshall Project . Verify prisoner accounts when officials deny flood impacts. Problematic because it isn’t sufficiently granular, but a helpful piece in combination with other data.
+
+---
+
+## Improved Visualizations 
+
+<br /> 
+
+```{r}
+
+htmltools::tags$iframe(
+  title = "Interactive Map",
+  src = "C:/Users/abhis/OneDrive/Documents/GitHub/plan672-assignment1/figures/interactive.html",
+  width = "100%",
+  height = "400",
+  scrolling = "no",
+  seamless = "seamless",
+  frameBorder = "0"
+)
+
+```
+
+
+<br/>
+
+```{r,echo=FALSE}
+htmltools::includeHTML(here("figures","tab_1.html"))
+```
+
+```{r,echo=FALSE}
+# library(shiny)
+# 
+# shiny::includeHTML(here("figures","interactive.html"))
+```
+
+---
+
+## Conclusion
