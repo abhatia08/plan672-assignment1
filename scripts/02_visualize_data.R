@@ -37,25 +37,6 @@ if (!file.exists(here::here("derived_data", "intercept_tidy.csv"))) {
     read_csv(here::here("derived_data", "intercept_tidy.csv"))
 }
 
-# ## Creating labels with paragraph breaks
-# intercept_tidy$labs <- paste(
-#   paste0('<p>',
-#          "Facility: ",
-#          intercept_tidy$name),
-#   '</p><p>',
-#   paste0("Capacity: ",
-#          intercept_tidy$capacity),
-#   '</p><p>',
-#   paste0("Type: ",
-#          intercept_tidy$type),
-#   '</p><p>',
-#   paste0("Security Level: ",
-#          intercept_tidy$securelvl),
-#   '</p><p>',
-#   paste0("Flood Risk: ",
-#          intercept_tidy$flood_risk),
-#   '</p>'
-# )
 
 ### Create an sf_df out of intercept data
 intercept_sf = sf::st_as_sf(intercept_tidy, coords = c("longitude", "latitude"), crs = 4326)
@@ -75,13 +56,13 @@ intercept_sf <-
   mutate(confidence = factor(confidence, levels = c('Low', 'Medium', 'Medium-High', 'High')))
 
 
-### 1.3.2 Hurricane Florence Raster data ----
-florence <-
-  raster::raster(here::here("derived_data", "FloodExtentFlorence.tif"))
-
-### 1.3.3 Hurricane Mathew Raster data ----
-mathew <-
-  raster::raster(here::here("derived_data", "FloodExtentMatthew.tif"))
+# ### 1.3.2 Hurricane Florence Raster data ----
+# florence <-
+#   raster::raster(here::here("derived_data", "FloodExtentFlorence.tif"))
+# 
+# ### 1.3.3 Hurricane Mathew Raster data ----
+# mathew <-
+#   raster::raster(here::here("derived_data", "FloodExtentMatthew.tif"))
 
 
 ### 1.3.4 Shapefiles ----
@@ -94,28 +75,6 @@ nc_shape <- sf::st_transform(nc_shape, 4326)
 
 ### Merge facility sf data
 nc_shape_df <- sf::st_join(nc_shape, intercept_sf , join = st_contains)
-
-### Prepare Basemap
-tmap_mode('plot')
-
-nc_basemap <- tm_shape(nc_shape_df) +
-  tm_polygons(
-    col = "grey100",
-    border.col = "#540000",
-    alpha = 0.05,
-    border.alpha = 0.6
-  ) +
-  tm_style("white") +
-  tm_layout(
-    title = "North Carolina",
-    title.size = 0.8,
-    title.position = c("left", "TOP"),
-    legend.show = FALSE,
-    outer.margins = c(0, 0, 0, 0)
-  ) +
-  tm_compass(type = "arrow", position = c("right", "bottom")) +
-  tm_scale_bar(position = c("left", "bottom")) 
-
 
 # 2. DATA VISUALIZATION ----
 
@@ -172,102 +131,8 @@ tab1
 gt::gtsave(tab1, path =
              "figures", "tab_1.html")
 
-# NOTE: To include this in an RMD file, create an r chunk and add in htmltools::includeHTML("figures/tab_1.html")
 
-
-## Plot of top 10 points to add to the map
-nc_basemap +
-  tm_shape(top_10_risk_df) +
-  tm_symbols(
-    col = "Flood Risk",
-    palette = "steelblue",
-    scale = 1,
-    shape = 21,
-    border.col = "#540000",
-    border.lwd = 1,
-    title.col = "Flood Risk"
-  )
-
-
-## 2.2 Fig 2. Static Plot of all locations with different basemaps for context ----
-## Set tmap mode
-tmap_mode('plot')
-
-nc_basemap
-
-## Add locations of prisons
-nc_basemap +
-  tm_shape(intercept_sf) +
-  tm_symbols(
-    col = "flood_risk_rating",
-    palette = c(
-      "#f2f8ff",
-      "#e1ebf7",
-      "#c7daf4",
-      "#a8c0f3",
-      "#79a6f6",
-      "#5492ff",
-      "#2d74da",
-      "#1e57a4",
-      "#234579",
-      "#1d3458"
-    ),
-    scale = 1,
-    shape = 21,
-    border.col = "#540000",
-    border.lwd = 1,
-    title.col = "Flood Risk Rating",
-    legend.col.is.portrait = "FALSE"
-  ) 
-
-
-dev.copy(
-  jpeg,
-  width = 800,
-  height = 500,
-  unit = "px",
-  quality = 100,
-  here("figures", "fig1.jpg")
-)
-dev.off()
-graphics.off()
-
-
-## 2.3 Fig 3. Hurricane Mathew Extent ----
-# ggplot(nc_shape) + geom_sf()
-# 
-# ## Drop values < 1
-# mathew[mathew < 1] <- NA
-# 
-# ## decrease resolution
-# mathew_lowres <- aggregate(mathew, fact = 20, fun = mean, expand = TRUE)
-# 
-# 
-# ## Clip data to shapefile
-# 
-# 
-# mathew_4326 <- projectRaster(mathew, crs = crs(nc_shape))
-# mathew_nc <- crop(mathew,extent(nc_shape))
-# 
-# nc_shape %>% crs()
-# 
-# mathew %>% crs()
-
-
-
-# filter tiff to only display values of 1 (flooding)
-
-# overlay with point data of prison locations
-
-# flag facilities which overlap flooding area
-
-# map prisions which were flooded including flooded population?
-
-# this flow can be repeated for hurricane matthew 
-# layers should be toggleable 
-
-
-## 2.4 Combined Interactive plot  ----
+## 2.2 Combined Interactive plot  ----
 ## Set tmap mode
 tmap_mode('view')
 
@@ -391,10 +256,5 @@ interactive %>% tmap_leaflet() %>% addLayersControl(
 
 
 
-
-## Save  figure
-## tmap_save(interactive, filename = here("figures", "interactive.html"))
-# htmlwidgets::saveWidget(interactive, here("figures", "interactive1.html"), width = 80, height = "400")
-# NOTE: You should export this as an html from the panel.
 
 
