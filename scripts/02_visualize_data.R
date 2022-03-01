@@ -101,7 +101,7 @@ tmap_mode('plot')
 nc_basemap <- tm_shape(nc_shape_df) +
   tm_polygons(
     col = "grey100",
-    border.col = "grey",
+    border.col = "#540000",
     alpha = 0.05,
     border.alpha = 0.6
   ) +
@@ -183,7 +183,7 @@ nc_basemap +
     palette = "steelblue",
     scale = 1,
     shape = 21,
-    border.col = "grey",
+    border.col = "#540000",
     border.lwd = 1,
     title.col = "Flood Risk"
   )
@@ -214,7 +214,7 @@ nc_basemap +
     ),
     scale = 1,
     shape = 21,
-    border.col = "grey",
+    border.col = "#540000",
     border.lwd = 1,
     title.col = "Flood Risk Rating",
     legend.col.is.portrait = "FALSE"
@@ -292,25 +292,33 @@ interactive <-
     symbol.size.fixed = FALSE
   )
 
+## Blues
+# fill_colors <- c(
+#   "#f2f8ff",
+#   "#e1ebf7",
+#   "#c7daf4",
+#   "#a8c0f3",
+#   "#79a6f6",
+#   "#5492ff",
+#   "#2d74da",
+#   "#1e57a4",
+#   "#234579",
+#   "#1d3458"
+# )
+
+## Generate Oranges from Mad's color palette
+
+fill_colors <- colorRampPalette(c("#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"), alpha = FALSE)(10)
+
+
 ## With all flood risk data
 interactive <- interactive + tm_shape(intercept_sf) +
   tm_symbols(
     col = "flood_risk_rating",
-    palette = c(
-      "#f2f8ff",
-      "#e1ebf7",
-      "#c7daf4",
-      "#a8c0f3",
-      "#79a6f6",
-      "#5492ff",
-      "#2d74da",
-      "#1e57a4",
-      "#234579",
-      "#1d3458"
-    ),
+    palette = fill_colors,
     scale = 1,
     shape = 21,
-    border.col = "grey",
+    border.col = "#540000",
     border.lwd = 1,
     title.col = "Flood Risk Rating",
     group = "All Facility Locations (Points)",
@@ -328,21 +336,10 @@ interactive <- interactive + tm_shape(intercept_sf) +
 interactive <- interactive + tm_shape(top_10_risk_df) +
   tm_symbols(
     col = "Flood Risk",
-    palette = c(
-      "#f2f8ff",
-      "#e1ebf7",
-      "#c7daf4",
-      "#a8c0f3",
-      "#79a6f6",
-      "#5492ff",
-      "#2d74da",
-      "#1e57a4",
-      "#234579",
-      "#1d3458"
-    ),
+    palette = fill_colors,
     scale = 1,
     shape = 21,
-    border.col = "grey",
+    border.col = "#540000",
     border.lwd = 1,
     title.col = "Flood Risk",
     group = "Top 10 At-Risk Facility Locations (Points)",
@@ -360,22 +357,11 @@ interactive <- interactive + tm_shape(top_10_risk_df) +
 interactive <- interactive + tm_shape(intercept_sf) +
   tm_symbols(
     col = "flood_risk_rating",
-    palette = c(
-      "#f2f8ff",
-      "#e1ebf7",
-      "#c7daf4",
-      "#a8c0f3",
-      "#79a6f6",
-      "#5492ff",
-      "#2d74da",
-      "#1e57a4",
-      "#234579",
-      "#1d3458"
-    ),
+    palette = fill_colors,
     scale = 1,
     size = "capacity",
     shape = 21,
-    border.col = "grey",
+    border.col = "#540000",
     border.lwd = 1,
     title.col = "Flood Risk Rating",
     group = "Facility Capacity",
@@ -408,7 +394,7 @@ interactive %>% tmap_leaflet() %>% addLayersControl(
 
 ## Save  figure
 ## tmap_save(interactive, filename = here("figures", "interactive.html"))
-htmlwidgets::saveWidget(interactive, here("figures", "interactive1.html"), width = 80, height = "400")
+# htmlwidgets::saveWidget(interactive, here("figures", "interactive1.html"), width = 80, height = "400")
 # NOTE: You should export this as an html from the panel.
 
 
